@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="http://leebh.net/js/bh.js"></script>
+	<style type="text/css">
+		body {font: sans-serif; background: peachpuff;}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Count All The Full Circles. You have 10 seconds.</h1>
+		<img src="slice1.png">
+	</div>
+	<script type="text/javascript">
+		var myTimer = setInterval(myFunction, 1000);
+
+		var a = 0;
+		function myFunction(){
+			var time = new Date();
+			var t = 10;
+			
+			
+			a = a + 1;
+			if(a == 20){
+				clearInterval(myTimer);
+				document.body.innerHTML = "Time Up. The answer is 12.";
+			}
+		}
+
+	</script>
+	
+</body>
+</html>
